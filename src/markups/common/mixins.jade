@@ -1,0 +1,10 @@
+mixin contactphone (town, number)
+  li.header__contacts-item    
+    .header__town= town
+    .header__number= number
+
+mixin descriptionblock (icon, text)
+  .description__item
+    .description__icon
+      img(src='#{icon}' alt='#{text}').image__width
+    .description__text= text 

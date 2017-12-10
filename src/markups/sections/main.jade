@@ -1,0 +1,32 @@
+include ../common/mixins
+
+.main__container 
+  .wrapper
+    .header
+      .header__wrap
+        .header__menu
+          ul.header__list
+            li.header__item
+              a(href='#') Главная
+            li.header__item
+              a(href='#') Главная
+            li.header__item
+              a(href='#') Главная
+            li.header__item
+              a(href='#') Главная
+        .header__contacts
+          ul.header__list
+            +contactphone('Тольятти', '(8482)37-95-30')
+            +contactphone('Сызрань', '(8464)37-30-60')
+    .main__brand
+      p.brand__type Сеть автосервисов
+      p.brand__name Навигатор
+      p.brand__slogan Европейский сервис по отечественной цене
+    .main__description
+      +descriptionblock('#', 'Всегда выгодные акции')
+      +descriptionblock('#', 'Гарантия на работы')
+      +descriptionblock('#', 'Комфортная зона ожидания')
+    .registration
+      .registration__block
+        a(href='#').registration__button Записаться
+

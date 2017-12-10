@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'pt_sans_regular';
+  src: url('../../dist/fonts/pt_sans_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt_sans_bold';
+  src: url('../../dist/fonts/pt_sans_bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt_sans_italic';
+  src: url('../../dist/fonts/pt_sans_italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt_sans_bold_italic';
+  src: url('../../dist/fonts/pt_sans_bold_italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin ptsans($style: regular) {
+  font-family: 'pt_sans_regular';
+
+  @if $style == bold {
+    font-family: 'pt_sans_bold';
+  }
+
+  @if $style == italic {
+    font-family: 'pt_sans_italic';
+  }
+
+  @if $style == bold_italic {
+    font-family: 'pt_sans_bold_italic';
+  }
+}

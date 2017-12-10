@@ -1,0 +1,27 @@
+//colors
+$yellow: #FBCA0b;
+$slogancolor: #FFFFFF;
+$headline: #263238;
+$itembackgroundcolor: #FFCC05;
+$buttongradient: #FBB03A;
+$buttonbottomborder: #F15A24;
+$formlabelcolor: #808080;
+$formfieldcolor: #cccccc;
+$reviewbackground: #E5E6E7;
+$footerbackground: #151515;
+$footermenuitem: #4D4D4D; 
+
+//sizes
+$maxwidth: 1920px;
+$wrapperwidth: 1280px;
+$headerheight: 8.775rem;
+$brandheight: 23.625rem;
+$descrheight: 11.25rem;
+$descritemwidth: 11.25rem;
+$registbuttonh: 5rem;
+$registbuttonw: 17rem;
+
+@import "_misc/fonts";
+@import "_misc/normalize";
+@import "_misc/adjustment";
+@import "sections/main";

@@ -1,0 +1,24 @@
+html, body {
+  width: 100%;
+}
+body {
+  font-family: 'pt_sans_regular', serif;
+  font-size: 16px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: $maxwidth;
+  min-width: $wrapperwidth;
+  width: 100%;
+  margin: 0 auto;  
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: $wrapperwidth;
+  min-height: 720px;
+  height: 100vh;
+  z-index: 10;
+}
