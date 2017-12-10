@@ -403,7 +403,7 @@ body {
 
 @media screen and (max-width: 1280px) {
   html {
-    font-size: 12px; }
+    font-size: 14px; }
   .wrapper {
     width: 1180px; } }
 
@@ -577,7 +577,7 @@ body {
   flex-grow: 1; }
 
 .registration__block {
-  padding-top: 3rem; }
+  padding-top: 1rem; }
 
 .registration__button {
   display: inline-block;
