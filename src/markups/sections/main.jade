@@ -6,14 +6,10 @@ include ../common/mixins
       .header__wrap
         .header__menu
           ul.header__list
-            li.header__item
-              a(href='#') Главная
-            li.header__item
-              a(href='#') Главная
-            li.header__item
-              a(href='#') Главная
-            li.header__item
-              a(href='#') Главная
+            +menuitem('#', 'В магазин')
+            +menuitem('#', 'Прайс')
+            +menuitem('#', 'Оставить отзыв')
+            +menuitem('#', 'Контакты')
         .header__contacts
           ul.header__list
             +contactphone('Тольятти', '(8482)37-95-30')
@@ -23,9 +19,10 @@ include ../common/mixins
       p.brand__name Навигатор
       p.brand__slogan Европейский сервис по отечественной цене
     .main__description
-      +descriptionblock('#', 'Всегда выгодные акции')
-      +descriptionblock('#', 'Гарантия на работы')
-      +descriptionblock('#', 'Комфортная зона ожидания')
+      .main_description-block  
+        +descriptionblock('#', 'Всегда выгодные акции')
+        +descriptionblock('#', 'Гарантия на работы')
+        +descriptionblock('#', 'Комфортная зона ожидания')
     .registration
       .registration__block
         a(href='#').registration__button Записаться

@@ -19,6 +19,7 @@
 .header {
   height: $headerheight;
   width: 100%;
+  box-shadow: 0 1px 0 0 #424242;
 }
 .header__wrap {
   display: flex;
@@ -30,24 +31,59 @@
   flex-grow: 1;
 }
 .header__list {
+  display: flex;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 .header__item {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 2rem;
+}
+.header__item:hover {
+  border-bottom: 1px solid $yellow;
+  color: $yellow;
+}
+.header__link {
+  text-decoration: none;
+  outline: none;
+  color: $white;
+  text-transform: uppercase;
+  position: relative;
+}
+.header__link::after {
+  position: absolute;
+  content: '';
+  display: block;
+  cursor: pointer;
+  top: -4rem;
+  height: 8rem;
+  width: 100%; 
+}
+.header__link:hover {
+  color: $yellow;
 }
 .header__contacts {
   display: flex;
   align-items: center;
 }
 .header__contacts-item {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
 }
 .header__town {
   display: inline-block;
+  color: $white;
+  text-transform: uppercase;
 }
 .header__number {
   display: inline-block;
+  color: $yellow;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
 }
 .main__brand {
   min-height: $brandheight;
@@ -76,15 +112,20 @@
   text-transform: uppercase;
   padding-top: 2.9375rem;
   line-height: 2.75rem;
-  color: $slogancolor;
+  color: $white;
   font-size: 2.75rem;
 }
 .main__description {
   min-height: $descrheight;
   display: flex;
+  justify-content: center;
+}
+.main_description-block {
+  display: flex;
   justify-content: space-between;
 }
 .description__item {
+  margin: 0 6rem;
   width: $descritemwidth;
   display: flex;
   flex-direction: column;
@@ -94,10 +135,25 @@
   height: 6.25rem;
   width: 6.25rem;
 }
-.description__text {
+.description__link {
   text-align: center;
   font-size: 1.125rem;
   color: $yellow;
+  text-transform: uppercase;
+  text-decoration-style: dotted;
+  position: relative;
+}
+.description__link:after {
+  position: absolute;
+  content: '';
+  display: block;
+  cursor: pointer;
+  top: 0;
+  height: 4rem;
+  width: 100%;
+}
+.description__link:hover {
+  text-decoration: none;
 }
 .image__width {
   width: 100%;
@@ -109,6 +165,7 @@
   flex-grow: 1; 
 }
 .registration__block {
+  padding-top: 3rem;
 }
 .registration__button {
   display: inline-block;

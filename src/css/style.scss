@@ -1,6 +1,6 @@
 //colors
 $yellow: #FBCA0b;
-$slogancolor: #FFFFFF;
+$white: #FFFFFF;
 $headline: #263238;
 $itembackgroundcolor: #FFCC05;
 $buttongradient: #FBB03A;
@@ -24,4 +24,5 @@ $registbuttonw: 17rem;
 @import "_misc/fonts";
 @import "_misc/normalize";
 @import "_misc/adjustment";
+@import "_misc/media";
 @import "sections/main";
