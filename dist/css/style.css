@@ -389,14 +389,14 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 1920px;
-  min-width: 1280px;
+  min-width: 1240px;
   width: 100%;
   margin: 0 auto; }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  width: 1280px;
+  width: 1240px;
   min-height: 800px;
   height: 100vh;
   z-index: 10; }
@@ -428,7 +428,7 @@ body {
 .header {
   height: 8.775rem;
   width: 100%;
-  box-shadow: 0 1px 0 0 #424242; }
+  border-bottom: 1px solid #424242; }
 
 .header__wrap {
   display: flex;
@@ -456,19 +456,22 @@ body {
   color: #FBCA0b; }
 
 .header__link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   outline: none;
   color: #FFFFFF;
   text-transform: uppercase;
-  position: relative; }
+  position: relative;
+  height: 100%; }
 
 .header__link::after {
   position: absolute;
   content: '';
   display: block;
   cursor: pointer;
-  top: -4rem;
-  height: 9rem;
+  top: 0;
+  height: 100%;
   width: 100%; }
 
 .header__link:hover {
@@ -544,8 +547,8 @@ body {
   align-items: center; }
 
 .main__description-icon {
-  height: 6.25rem;
-  width: 6.25rem; }
+  height: 4rem;
+  padding-bottom: 2rem; }
 
 .main__description-link {
   text-align: center;
@@ -561,23 +564,25 @@ body {
   display: block;
   cursor: pointer;
   top: 0;
-  height: 4rem;
+  height: 100%;
   width: 100%; }
 
 .main__description-link:hover {
   text-decoration: none; }
 
-.image__width {
-  width: 100%; }
+.image__size {
+  width: 100%;
+  height: 100%; }
 
 .registration {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 10rem;
   flex-grow: 1; }
 
 .registration__block {
-  padding-top: 1rem; }
+  padding-top: 2rem; }
 
 .registration__button {
   display: inline-block;
@@ -593,4 +598,14 @@ body {
   height: 5rem;
   width: 17rem;
   background-color: #FBCA0b;
+  background: linear-gradient(#FBCA0b, #FBB03A);
+  border-bottom: 3px solid #F15A24;
   border-radius: 1rem; }
+
+.main_arrow {
+  display: flex;
+  justify-content: center;
+  min-height: 5rem; }
+
+.main__arrow-block {
+  padding-bottom: 3rem; }

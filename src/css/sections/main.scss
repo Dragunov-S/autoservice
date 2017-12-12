@@ -19,7 +19,7 @@
 .header {
   height: $headerheight;
   width: 100%;
-  box-shadow: 0 1px 0 0 #424242;
+  border-bottom: 1px solid #424242;
 }
 .header__wrap {
   display: flex;
@@ -47,19 +47,22 @@
   color: $yellow;
 }
 .header__link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   outline: none;
   color: $white;
   text-transform: uppercase;
   position: relative;
+  height: 100%;
 }
 .header__link::after {
   position: absolute;
   content: '';
   display: block;
   cursor: pointer;
-  top: -4rem;
-  height: 9rem;
+  top: 0;
+  height: 100%;
   width: 100%; 
 }
 .header__link:hover {
@@ -132,8 +135,8 @@
   align-items: center;  
 }
 .main__description-icon {
-  height: 6.25rem;
-  width: 6.25rem;
+  height: 4rem;
+  padding-bottom: 2rem;
 }
 .main__description-link {
   text-align: center;
@@ -149,23 +152,25 @@
   display: block;
   cursor: pointer;
   top: 0;
-  height: 4rem;
+  height: 100%;
   width: 100%;
 }
 .main__description-link:hover {
   text-decoration: none;
 }
-.image__width {
+.image__size {
   width: 100%;
+  height: 100%;
 }
 .registration {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 10rem;
   flex-grow: 1; 
 }
 .registration__block {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 .registration__button {
   display: inline-block;
@@ -180,5 +185,15 @@
   height: $registbuttonh;
   width: $registbuttonw;
   background-color: $yellow;
+  background: linear-gradient($yellow, $buttongradient);
+  border-bottom: 3px solid $buttonbottomborder; 
   border-radius: 1rem;
+}
+.main_arrow {
+  display: flex;
+  justify-content: center;
+  min-height: 5rem;
+}
+.main__arrow-block {
+  padding-bottom: 3rem; 
 }

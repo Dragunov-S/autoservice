@@ -20,10 +20,14 @@ include ../common/mixins
       p.brand__slogan Европейский сервис по отечественной цене
     .main__description
       .main__description-block  
-        +descriptionblock('#', 'Всегда выгодные акции')
-        +descriptionblock('#', 'Гарантия на работы')
-        +descriptionblock('#', 'Комфортная зона ожидания')
+        +descriptionblock('discounts', 'Всегда выгодные акции')
+        +descriptionblock('guarantee', 'Гарантия на работы')
+        +descriptionblock('recreation', 'Комфортная зона ожидания')
     .registration
       .registration__block
         a(href='#').registration__button Записаться
+    .main_arrow
+      .main__arrow-block
+        a(href='#').main_arrow-link
+          img(src="dist/img/arrow-down.svg" onerror="this.onerror=null; this.src='dist/img/arrow-down.png'") 
 
