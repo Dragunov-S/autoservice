@@ -1,8 +1,9 @@
-@media screen and (max-width: 1280px) { //hd
-  html {
-    font-size: 14px;
-  }
+@media screen and (max-width: 1280px) { 
   .wrapper {
     width: 1180px;
+  }
+  .price__services-item {
+    height: 16.438rem;
+    width: 16.438rem;
   }
 }

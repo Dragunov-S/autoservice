@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <div class="main__container"> 
-        <div class="wrapper">
+        <div class="wrapper wrapper__minmax">
           <div class="header">
             <div class="header__wrap">
               <div class="header__menu">
@@ -48,13 +48,13 @@
             <div class="main__description-block"> 
                     <div class="main__description-item"><a href="#" class="main__description-link">
                         <div class="main__description-icon"><img src="dist/img/discounts.svg" alt="Всегда выгодные акции" onerror="this.onerror=null; this.src='dist/img/discounts.png'" class="image__size"></div>
-                        <pmain__description-text>Всегда выгодные акции</pmain__description-text></a></div>
+                        <p class="main__description-text">Всегда выгодные акции</p></a></div>
                     <div class="main__description-item"><a href="#" class="main__description-link">
                         <div class="main__description-icon"><img src="dist/img/guarantee.svg" alt="Гарантия на работы" onerror="this.onerror=null; this.src='dist/img/guarantee.png'" class="image__size"></div>
-                        <pmain__description-text>Гарантия на работы</pmain__description-text></a></div>
+                        <p class="main__description-text">Гарантия на работы</p></a></div>
                     <div class="main__description-item"><a href="#" class="main__description-link">
                         <div class="main__description-icon"><img src="dist/img/recreation.svg" alt="Комфортная зона ожидания" onerror="this.onerror=null; this.src='dist/img/recreation.png'" class="image__size"></div>
-                        <pmain__description-text>Комфортная зона ожидания</pmain__description-text></a></div>
+                        <p class="main__description-text">Комфортная зона ожидания</p></a></div>
             </div>
           </div>
           <div class="registration">
@@ -65,50 +65,103 @@
           </div>
         </div>
       </div>
-      <div class="wrapper">
-        <div class="header">
-          <div class="header__wrap">
-            <div class="header__menu">
-              <ul class="header__list">
-                <li class="header__item"><a href="#">Главная</a></li>
-                <li class="header__item"><a href="#">Главная</a></li>
-                <li class="header__item"><a href="#">Главная</a></li>
-                <li class="header__item"><a href="#">Главная</a></li>
-              </ul>
-            </div>
-            <div class="header__contacts">
-              <ul class="header__list">
-                      <li class="header__contacts-item">   
-                        <div class="header__town">Тольятти</div>
-                        <div class="header__number">(8482)37-95-30</div>
-                      </li>
-                      <li class="header__contacts-item">   
-                        <div class="header__town">Сызрань</div>
-                        <div class="header__number">(8464)37-30-60</div>
-                      </li>
-              </ul>
+      <div class="price__container"> 
+        <div class="wrapper"> 
+          <div class="price__headline">
+            <div class="price__headline-block">
+              <p class="price__headline-text">Прайс на услуги</p>
             </div>
           </div>
-        </div>
-        <div class="brand">
-          <div class="brand__type">Сеть автосервисов</div>
-          <div class="brand__name">Навигатор</div>
-          <div class="brand__slogan">Европейский сервис по отечественной цене</div>
-        </div>
-        <div class="description">
-                <div class="main__description-item"><a href="#" class="main__description-link">
-                    <div class="main__description-icon"><img src="dist/img/#.svg" alt="Всегда выгодные акции" onerror="this.onerror=null; this.src='dist/img/#.png'" class="image__size"></div>
-                    <pmain__description-text>Всегда выгодные акции</pmain__description-text></a></div>
-                <div class="main__description-item"><a href="#" class="main__description-link">
-                    <div class="main__description-icon"><img src="dist/img/#.svg" alt="Гарантия на работы" onerror="this.onerror=null; this.src='dist/img/#.png'" class="image__size"></div>
-                    <pmain__description-text>Гарантия на работы</pmain__description-text></a></div>
-                <div class="main__description-item"><a href="#" class="main__description-link">
-                    <div class="main__description-icon"><img src="dist/img/#.svg" alt="Комфортная зона ожидания" onerror="this.onerror=null; this.src='dist/img/#.png'" class="image__size"></div>
-                    <pmain__description-text>Комфортная зона ожидания</pmain__description-text></a></div>
-        </div>
-        <div class="registration">
-          <div class="registration__block">
-            <div class="registration__button"></div>
+          <div class="price__services">
+            <div class="price__services-block">
+                    <div style="background-image: url(dist/img/tech-service.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/price-tech-service.svg" alt="Техническое обслуживание" onerror="this.onerror=null; this.src='dist/img/price-tech-service.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Техническое обслуживание</p>
+                        </div></a></div>
+                    <div style="background-image: url(dist/img/cooling-system.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/cooling-system.svg" alt="Система охлаждения" onerror="this.onerror=null; this.src='dist/img/cooling-system.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Система охлаждения</p>
+                        </div></a></div>
+                    <div style="background-image: url(dist/img/tyres.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/price-tyres.svg" alt="Шиномонтажные работы" onerror="this.onerror=null; this.src='dist/img/price-tyres.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Шиномонтажные работы</p>
+                        </div></a></div>
+                    <div style="background-image: url(dist/img/geometry.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/price-geometry.svg" alt="Геометрия подвески" onerror="this.onerror=null; this.src='dist/img/price-geometry.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Геометрия подвески</p>
+                        </div></a></div>
+                    <div style="background-image: url(dist/img/steering-wheel.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/steering-wheel.svg" alt="Подвеска, рулевое управление" onerror="this.onerror=null; this.src='dist/img/steering-wheel.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Подвеска, рулевое управление</p>
+                        </div></a></div>
+                    <div style="background-image: url(dist/img/brakers.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/brakers.svg" alt="Тормозная система" onerror="this.onerror=null; this.src='dist/img/brakers.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Тормозная система</p>
+                        </div></a></div>
+                    <div style="background-image: url(dist/img/battery.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/battery.svg" alt="Аккумуляторы и свечи" onerror="this.onerror=null; this.src='dist/img/battery.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Аккумуляторы и свечи</p>
+                        </div></a></div>
+                    <div style="background-image: url(dist/img/tech-service.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/price-tech-service.svg" alt="Генератор, стартер и ремни" onerror="this.onerror=null; this.src='dist/img/price-tech-service.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Генератор, стартер и ремни</p>
+                        </div></a></div>
+                    <div style="background-image: url(dist/img/optics.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/optics.svg" alt="Оптика" onerror="this.onerror=null; this.src='dist/img/optics.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Оптика</p>
+                        </div></a></div>
+                    <div style="background-image: url(dist/img/conditioner.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/conditioner.svg" alt="Система кондиционирования" onerror="this.onerror=null; this.src='dist/img/conditioner.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Система кондиционирования</p>
+                        </div></a></div>
+                    <div style="background-image: url(dist/img/gear.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/gear.svg" alt="Трансмиссия" onerror="this.onerror=null; this.src='dist/img/gear.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Трансмиссия</p>
+                        </div></a></div>
+                    <div style="background-image: url(dist/img/other.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                        <div class="price__services-half price__services-half--end"> 
+                          <div class="price__services-icon"><img src="dist/img/other.svg" alt="Другое" onerror="this.onerror=null; this.src='dist/img/other.png'" class="image__size"></div>
+                        </div>
+                        <div class="price__services-half">
+                          <p class="price__services-text">Другое</p>
+                        </div></a></div>
+            </div>
+          </div>
+          <div class="registration">
+            <div class="registration__block"><a href="#" class="registration__button">Записаться</a></div>
           </div>
         </div>
       </div>

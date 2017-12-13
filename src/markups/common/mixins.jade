@@ -13,4 +13,13 @@ mixin descriptionblock (icon, text)
     a(href='#').main__description-link
       .main__description-icon
         img(src='dist/img/#{icon}.svg' alt='#{text}' onerror="this.onerror=null; this.src='dist/img/#{icon}.png'").image__size
-      pmain__description-text #{text}
+      p.main__description-text #{text}
+
+mixin priceitem (bg, icon, text)
+  .price__services-item(style='background-image: url(dist/img/#{bg}.jpg)')
+    a(href='#').price__services-link  
+      .price__services-half.price__services-half--end  
+        .price__services-icon
+          img(src='dist/img/#{icon}.svg' alt='#{text}' onerror="this.onerror=null; this.src='dist/img/#{icon}.png'").image__size
+      .price__services-half
+        p.price__services-text #{text}

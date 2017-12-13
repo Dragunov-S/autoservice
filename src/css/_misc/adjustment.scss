@@ -18,7 +18,41 @@ body {
   display: flex;
   flex-direction: column;
   width: $wrapperwidth;
-  min-height: 800px;
-  height: 100vh;
   z-index: 10;
+}
+.wrapper__minmax {  
+  min-height: $minheight;
+  max-height: $maxheight;
+  height: 100vh;
+}
+.image__size {
+  width: 100%;
+  height: 100%;
+}
+.registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 10rem;
+  flex-grow: 1; 
+}
+.registration__block {
+  padding-top: 2rem;
+}
+.registration__button {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: $registbuttonh;
+  @include ptsans(bold);
+  color: $headline;
+  height: $registbuttonh;
+  width: $registbuttonw;
+  background-color: $yellow;
+  background: linear-gradient($yellow, $buttongradient);
+  border-bottom: 3px solid $buttonbottomborder; 
+  border-radius: 1rem;
 }

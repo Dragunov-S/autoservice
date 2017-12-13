@@ -1,30 +1,24 @@
 include ../common/mixins
 
-.wrapper
-  .header
-    .header__wrap
-      .header__menu
-        ul.header__list
-          li.header__item
-            a(href='#') Главная
-          li.header__item
-            a(href='#') Главная
-          li.header__item
-            a(href='#') Главная
-          li.header__item
-            a(href='#') Главная
-      .header__contacts
-        ul.header__list
-          +contactphone('Тольятти', '(8482)37-95-30')
-          +contactphone('Сызрань', '(8464)37-30-60')
-  .brand
-    .brand__type Сеть автосервисов
-    .brand__name Навигатор
-    .brand__slogan Европейский сервис по отечественной цене
-  .description
-    +descriptionblock('#', 'Всегда выгодные акции')
-    +descriptionblock('#', 'Гарантия на работы')
-    +descriptionblock('#', 'Комфортная зона ожидания')
-  .registration
-    .registration__block
-      .registration__button
+.price__container  
+  .wrapper 
+    .price__headline
+      .price__headline-block
+        p.price__headline-text Прайс на услуги
+    .price__services
+      .price__services-block
+        +priceitem ('tech-service', 'price-tech-service', 'Техническое обслуживание')
+        +priceitem ('cooling-system', 'cooling-system', 'Система охлаждения')
+        +priceitem ('tyres', 'price-tyres', 'Шиномонтажные работы')
+        +priceitem ('geometry', 'price-geometry', 'Геометрия подвески')
+        +priceitem ('steering-wheel', 'steering-wheel', 'Подвеска, рулевое управление')
+        +priceitem ('brakers', 'brakers', 'Тормозная система')
+        +priceitem ('battery', 'battery', 'Аккумуляторы и свечи')
+        +priceitem ('tech-service', 'price-tech-service', 'Генератор, стартер и ремни')
+        +priceitem ('optics', 'optics', 'Оптика')
+        +priceitem ('conditioner', 'conditioner', 'Система кондиционирования')
+        +priceitem ('gear', 'gear', 'Трансмиссия') 
+        +priceitem ('other', 'other', 'Другое') 
+    .registration
+      .registration__block
+        a(href='#').registration__button Записаться
