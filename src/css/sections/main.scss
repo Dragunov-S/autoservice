@@ -93,8 +93,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
 }
-.brand__type {
+.main__brand-type {
   @include ptsans(bold);
   text-transform: uppercase;
   padding-top: 4.0625rem;
@@ -102,7 +103,7 @@
   color: $yellow;
   font-size: 3.875rem;
 }
-.brand__name {
+.main__brand-name {
   @include ptsans(bold);
   text-transform: uppercase;
   padding-top: 0.625rem;
@@ -110,7 +111,7 @@
   color: $yellow;
   font-size: 5rem;  
 }
-.brand__slogan {
+.main__brand-slogan {
   @include ptsans(bold);
   text-transform: uppercase;
   padding-top: 2.9375rem;
@@ -122,6 +123,7 @@
   min-height: $descrheight;
   display: flex;
   justify-content: center;
+  flex-grow: 1;
 }
 .main__description-block {
   display: flex;
@@ -162,8 +164,7 @@
 .main_arrow {
   display: flex;
   justify-content: center;
-  min-height: 5rem;
 }
 .main__arrow-block {
-  padding-bottom: 3rem; 
+  padding-bottom: 2rem; 
 }

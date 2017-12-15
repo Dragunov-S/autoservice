@@ -1,7 +1,7 @@
 include ../common/mixins
 
 .main__container 
-  .wrapper.wrapper__minmax
+  .wrapper.main__wrapper
     .header
       .header__wrap
         .header__menu
@@ -15,9 +15,9 @@ include ../common/mixins
             +contactphone('Тольятти', '(8482)37-95-30')
             +contactphone('Сызрань', '(8464)37-30-60')
     .main__brand
-      p.brand__type Сеть автосервисов
-      p.brand__name Навигатор
-      p.brand__slogan Европейский сервис по отечественной цене
+      p.main__brand-type Сеть автосервисов
+      p.main__brand-name Навигатор
+      p.main__brand-slogan Европейский сервис по отечественной цене
     .main__description
       .main__description-block  
         +descriptionblock('discounts', 'Всегда выгодные акции')
