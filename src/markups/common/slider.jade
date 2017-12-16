@@ -1,0 +1,33 @@
+.csslider
+  input(type="radio" name="slides" id="slides_1" checked)
+  input(type="radio" name="slides" id="slides_2")
+  input(type="radio" name="slides" id="slides_3")
+  input(type="radio" name="slides" id="slides_4")
+  input(type="radio" name="slides" id="slides_N")
+  ul
+    li
+      img(src='dist/img/slider1.jpg').image__size
+    li
+      img(src='dist/img/slider1.jpg').image__size
+    li
+      img(src='dist/img/slider1.jpg').image__size
+    li
+      img(src='dist/img/slider1.jpg').image__size
+    li
+      img(src='dist/img/slider1.jpg').image__size
+  .arrows
+    label(for="slides_1")
+    label(for="slides_2")
+    label(for="slides_3")
+    label(for="slides_4")
+    label(for="slides_N")
+    label(for="slides_1").goto-first
+    label(for="slides_N").goto-last
+  .navigation
+    div
+      label(for="slides_1")
+      label(for="slides_2")
+      label(for="slides_3")
+      label(for="slides_4")
+      label(for="slides_N")
+  .slider__border

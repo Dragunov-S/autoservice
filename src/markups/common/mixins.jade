@@ -5,6 +5,14 @@ mixin menuitem (link, text)
     a(href='#{link}').header__link 
       p.header__link-text  #{text}
 
+mixin headline (text, color)
+  .headline
+    .headline__block
+      if(color === '1')
+        p.headline__text.headline__text--color= text
+      else
+        p.headline__text= text   
+
 mixin contactphone (town, number)
   li.header__contacts-item    
     .header__town= town
@@ -24,6 +32,5 @@ mixin priceitem (bg, icon, text, vw, vh)
         .price__services-icon
           svg(width="60" height="60" viewbox="0 0 #{vw} #{vh}").svg
             use(xlink:href='#' + icon)
-          //img(src='dist/img/#{icon}.svg' alt='#{text}' onerror="this.onerror=null; this.src='dist/img/#{icon}.png'").image__size.price__services-svg
       .price__services-half
         p.price__services-text #{text}

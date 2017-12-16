@@ -1,0 +1,15 @@
+.choise__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $choisebackground;
+}
+.choise__slider{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.choise__slider-block {
+  
+}

@@ -5,22 +5,6 @@
   align-items: center;
   background-color: $pricebackground;
 }
-.price__headline {
-  display: flex;
-  justify-content: center;
-  width: 100%;  
-  height: $headerheight;
-}
-.price__headline-block {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.price__headline-text {
-  @include ptsans(bold);
-  font-size: 2rem;
-  text-transform: uppercase;
-}
 .price__services {
   display: flex;
   justify-content: center;

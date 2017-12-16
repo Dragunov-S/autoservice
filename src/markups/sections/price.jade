@@ -1,10 +1,6 @@
-include ../common/mixins
-
 .price__container  
   .wrapper 
-    .price__headline
-      .price__headline-block
-        p.price__headline-text Прайс на услуги
+    +headline('Прайс на услуги')
     .price__services
       .price__services-block
         +priceitem ('tech-service', 'price-tech-service', 'Техническое обслуживание', '48', '48')
