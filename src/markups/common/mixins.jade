@@ -1,7 +1,12 @@
-mixin menuitem (link, text)
-  li.header__item
-    a(href='#{link}').header__link 
-      p.header__link-text #{text}
+mixin menuitem (link, text, place)
+  if(place === 'footer')
+    li.footer__item
+      a(href='#{link}').footer__link 
+        p.footer__link-text #{text}
+  else
+    li.header__item
+      a(href='#{link}').header__link 
+        p.header__link-text #{text}
 
 mixin headline (text, color)
   .headline
@@ -11,10 +16,15 @@ mixin headline (text, color)
       else
         p.headline__text= text   
 
-mixin contactphone (town, number)
-  li.header__contacts-item    
-    .header__town= town
-    .header__number= number
+mixin contactphone (town, number, place)
+  if(place === 'footer')
+    li.footer__contacts-item    
+      .footer__town= town
+      .footer__number= number
+  else
+    li.header__contacts-item    
+      .header__town= town
+      .header__number= number
 
 mixin descriptionblock (icon, text)
   .main__description-item

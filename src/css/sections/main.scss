@@ -97,7 +97,7 @@
 .main__brand-type {
   @include ptsans(bold);
   text-transform: uppercase;
-  padding-top: 4.0625rem;
+  padding-top: 4rem;
   line-height: 3.75rem;
   color: $yellow;
   font-size: 3.875rem;
@@ -113,7 +113,7 @@
 .main__brand-slogan {
   @include ptsans(bold);
   text-transform: uppercase;
-  padding-top: 2.9375rem;
+  padding-top: 2.3rem;
   line-height: 2.75rem;
   color: $white;
   font-size: 2.75rem;

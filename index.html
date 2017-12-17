@@ -16,6 +16,7 @@
       s.iconStyle.offset = new YMaps.Point(-9, -29);
       map.setCenter(new YMaps.GeoPoint(49.32, 53.55), 13);
       var placemark = new YMaps.Placemark(new YMaps.GeoPoint(49.28777059999993, 53.5479249), {style: s});
+      map.enableScrollZoom();
       map.addControl(new YMaps.Zoom());
       placemark.name = "Навигатор";
       placemark.description = "Сеть автосервисов навигатор";
@@ -66,12 +67,13 @@
           <path d="M19,554a17.22,17.22,0,0,1,17,16.67c0,13.07-12.62,29.12-17,34.29-4.38-5.17-17-21.2-17-34.25A17.23,17.23,0,0,1,19,554m0-2A19.26,19.26,0,0,0,0,570.67C0,587.39,19,608,19,608s19-20.62,19-37.33A19.26,19.26,0,0,0,19,552h0Z" transform="translate(0 -552)"></path>
           <path d="M30.87,565.62a10.4,10.4,0,0,0-2.73-3.9,12.1,12.1,0,0,0-4-2.6A16.52,16.52,0,0,0,19,558H18.1a13.43,13.43,0,0,0-5.32,1.59,11.39,11.39,0,0,0-4.9,4.56,12.22,12.22,0,0,0-1.42,3.38,15.49,15.49,0,0,0-.47,3.9,11.1,11.1,0,0,0,.47,3.12q0.16,0.53.38,1.08a13.45,13.45,0,0,0,2.6,4.09,11.7,11.7,0,0,0,4.24,3.13,14.39,14.39,0,0,0,4.47,1.08c0.51,0,1,.07,1.55.07a12.26,12.26,0,0,0,6.23-1.72A12.92,12.92,0,0,0,32,571.14v-0.57A14.07,14.07,0,0,0,30.87,565.62Zm-4,11.65-6.54-1.42-2.26,2.37-2.37,2.45-0.61-6.61-6-3.07,6-2.7,0.93-6.62,2,2.21,2.48,2.72,6.54-1.15-3.32,5.87Z" transform="translate(0 -552)"></path>
         </symbol>
+        <path id="navigator-logo" d="M464.46,571.2v-5.95a5.49,5.49,0,0,0,2.17-1,5.56,5.56,0,0,0,2.17-2.53,8.41,8.41,0,0,0,.79-3.29,6.6,6.6,0,0,0-1.72-4.57,6.17,6.17,0,0,0-3.41-1.73v-5.66h2.64a16.22,16.22,0,0,1,8.08,1.88,11.59,11.59,0,0,1,5.11,4.73,13.11,13.11,0,0,1,1.72,6.29,14.34,14.34,0,0,1-.79,4.41,10.25,10.25,0,0,1-2.63,3.78,12.21,12.21,0,0,1-4,2.67,14.88,14.88,0,0,1-5.59,1h-4.5Zm0-24.72v5.66a9,9,0,0,0-1.71-.15h-3.43v13.39h3.89a6.32,6.32,0,0,0,1.24-.12v5.95h-5.14v16.38H448.16v-41.1h16.3Zm-43.4,42.41v-9.34l3.82-3.94L435.73,578l-5.27-9.92,5.58-9.77-10.87,1.91-4.12-4.53v-9.6c0.5,0,1-.06,1.48-0.06a27.16,27.16,0,0,1,8.39,1.74,19.93,19.93,0,0,1,6.67,4.4,17.24,17.24,0,0,1,4.51,6.46,23.32,23.32,0,0,1,1.87,8.19v0.94a21.39,21.39,0,0,1-10.1,18.43A20.16,20.16,0,0,1,423.61,589C422.73,589,421.88,589,421.05,588.89Zm0-42.83v9.6L417.71,552l-1.55,11-10.09,4.57,9.93,5,1.09,11,3.95-4.09v9.34a23.66,23.66,0,0,1-7.37-1.79,19.28,19.28,0,0,1-7-5.19,22.27,22.27,0,0,1-4.2-6.78q-0.35-.9-0.61-1.78V561.81a20.25,20.25,0,0,1,2.32-5.58,18.8,18.8,0,0,1,8.07-7.56,22.08,22.08,0,0,1,8.77-2.62h0Zm-19.16,6.39h0.77v-6h-0.77v6Zm0-6v6H391.48v35.13H380.3V552.45h-7.53v-6h29.11Zm0,15.33a25.69,25.69,0,0,0-.77,6.39,18.41,18.41,0,0,0,.77,5.15V561.81h0Zm-29.11,25.77h3.79l-3.25-9-0.54-1.47v10.45Zm0-41.1v6H369v-6h3.8Zm0,30.65-11.25-30.65h-8.7v9.92h0l4.82,13.85h-4.82v5.36h6.83l4.35,12h8.77V577.13Zm-20-30.65v9.92L348,570.24h4.81v5.36h-6.36l-3.89,12h-2.48V576.25l7.14-20.8,3.11-9h2.48Zm-12.73,6H344v-6h-3.88v6Zm-74.68,14.34c2.63-.94,4.5-2.06,5.59-3.47a8.36,8.36,0,0,0,1.71-5.51v-1.42A10,10,0,0,0,268,549c-2.63-1.74-6.37-2.52-11.49-2.52h-0.7v5.61a5.8,5.8,0,0,1,2.25.85,4.35,4.35,0,0,1,2,2.36,6.63,6.63,0,0,1,.78,3,5.82,5.82,0,0,1-1.39,3.94,4.61,4.61,0,0,1-3.65,1.57v5.71a7.12,7.12,0,0,1,2.09.74,7,7,0,0,1,3.72,6,5.72,5.72,0,0,1-1.71,4.09,6.15,6.15,0,0,1-4.11,1.69v5.56H260a21.77,21.77,0,0,0,6.68-1,11,11,0,0,0,5.27-3,8.15,8.15,0,0,0,2.33-5.52,13,13,0,0,0-1.71-6.45c-1.09-1.89-3.42-3.61-7.14-4.87h0Zm74.68-20.31v6H328.92v35.13H317.73v-41.1h22.36Zm0,29.77-3.89,11.33h3.89V576.25h0Zm-50.31-4.74-1.09,3.94v-29H277.52v41.1h12.26l10.09-27.39,1.09-3.79-0.16,31.19h11.33v-41.1H299.72Zm-33.92-25H239.63v41.1h16.23V582c-0.37,0-.76,0-1.17,0h-3.88V569.31h3a10.82,10.82,0,0,1,2.09.2v-5.71h-5V552h3.88a6.67,6.67,0,0,1,1.17.1v-5.61h0ZM214.71,575.6v-5.36h4.89l-4.82-13.85-0.07.22V546.48h8.77l11.8,32.12,3.26,9H226l-4.5-12h-6.76Zm0-29.12v10.13l-4.89,13.63h4.89v5.36h-6.29l-4,12h-6.21l11-32.13,3.11-9h2.4ZM185.29,563.8H173.19V546.48H162v41.1h11.19V569.31h12.11v18.27h11.33v-41.1H185.29V563.8Z" transform="translate(-162 -546)"></path>
       </defs>
     </svg>
   </head>
   <body>
     <div class="container">
-      <div class="main__container"> 
+      <div id="main" class="main__container"> 
         <div class="wrapper main__wrapper">
           <div class="header">
             <div class="header__wrap">
@@ -81,9 +83,9 @@
                           <p class="header__link-text">В магазин</p></a></li>
                       <li class="header__item"><a href="#price" class="header__link"> 
                           <p class="header__link-text">Прайс</p></a></li>
-                      <li class="header__item"><a href="#" class="header__link"> 
+                      <li class="header__item"><a href="#review" class="header__link"> 
                           <p class="header__link-text">Оставить отзыв</p></a></li>
-                      <li class="header__item"><a href="#" class="header__link"> 
+                      <li class="header__item"><a href="#contacts" class="header__link"> 
                           <p class="header__link-text">Контакты</p></a></li>
                 </ul>
               </div>
@@ -103,7 +105,9 @@
           </div>
           <div class="main__brand">
             <p class="main__brand-type">Сеть автосервисов</p>
-            <p class="main__brand-name">Навигатор</p>
+            <svg width="420" height="100" viewbox="0 0 320 43" class="svg">
+              <use xlink:href="#navigator-logo"></use>
+            </svg>
             <p class="main__brand-slogan">Европейский сервис по отечественной цене</p>
           </div>
           <div class="main__description">
@@ -385,7 +389,7 @@
               </div>
         </div>
       </div>
-      <div class="review__container">
+      <div id="review" class="review__container">
         <div class="review__wrapper">
           <div class="review__block"> 
                 <div class="headline">
@@ -484,8 +488,8 @@
           </div>
         </div>
       </div>
-      <div class="map__container">
-        <div class="wrapper">
+      <div id="contacts" class="map__container">
+        <div class="footer__wrapper">
               <div class="headline">
                 <div class="headline__block">
                   <p class="headline__text headline__text--color">Как нас найти</p>
@@ -511,7 +515,45 @@
                     <p class="map__citytime">8:00 –20:00</p>
                   </div>
             </div>
-            <div id="YMapsID" class="map__map"></div>
+          </div>
+        </div>
+      </div>
+      <div id="YMapsID" class="map__map"><a href="#main" class="up__link"></a></div>
+      <div class="footer__container">
+        <div class="footer__wrapper">
+          <div class="footer">
+            <div class="footer_logo">
+              <svg width="190" height="100" viewbox="0 0 320 43" class="footer_svg">
+                <use xlink:href="#navigator-logo"> </use>
+              </svg>
+            </div>
+            <div class="footer__menu">
+              <ul class="footer__list">
+                    <li class="footer__item"><a href="#price" class="footer__link"> 
+                        <p class="footer__link-text">В магазин</p></a></li>
+                    <li class="footer__item"><a href="#price" class="footer__link"> 
+                        <p class="footer__link-text">Прайс</p></a></li>
+                    <li class="footer__item"><a href="#" class="footer__link"> 
+                        <p class="footer__link-text">Оставить отзыв</p></a></li>
+                    <li class="footer__item"><a href="#" class="footer__link"> 
+                        <p class="footer__link-text">Контакты</p></a></li>
+              </ul>
+            </div>
+            <div class="footer__contacts">
+              <ul class="footer__list">
+                    <li class="footer__contacts-item">   
+                      <div class="footer__town">Тольятти</div>
+                      <div class="footer__number">(8482)37-95-30</div>
+                    </li>
+                    <li class="footer__contacts-item">   
+                      <div class="footer__town">Сызрань</div>
+                      <div class="footer__number">(8464)37-30-60</div>
+                    </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__information">
+            <p class="footer__text">2011–2017 ООО «Навигатор» Интернет магазин автозапчастей ВАЗ — продажа запчастей оптом и в розницу по всей России. Все права защищены. Копирование контента сайта в любой форме без разрешения владельцев авторских прав запрещено</p>
           </div>
         </div>
       </div>

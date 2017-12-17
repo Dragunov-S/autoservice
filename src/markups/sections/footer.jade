@@ -1,0 +1,18 @@
+.footer__container
+  .footer__wrapper
+    .footer
+      .footer_logo
+        svg(width="190" height="100" viewbox="0 0 320 43").footer_svg
+          use(xlink:href='#navigator-logo') 
+      .footer__menu
+        ul.footer__list
+          +menuitem('#price', 'В магазин', 'footer')
+          +menuitem('#price', 'Прайс', 'footer')
+          +menuitem('#', 'Оставить отзыв', 'footer')
+          +menuitem('#', 'Контакты', 'footer')
+      .footer__contacts
+        ul.footer__list
+          +contactphone('Тольятти', '(8482)37-95-30', 'footer')
+          +contactphone('Сызрань', '(8464)37-30-60', 'footer')
+    .footer__information
+      p.footer__text 2011–2017 ООО «Навигатор» Интернет магазин автозапчастей ВАЗ — продажа запчастей оптом и в розницу по всей России. Все права защищены. Копирование контента сайта в любой форме без разрешения владельцев авторских прав запрещено

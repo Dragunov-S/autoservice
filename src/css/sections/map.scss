@@ -13,6 +13,22 @@
 .map__map {
   height: 30rem;
   width: 100%;
+  position: relative;
+}
+.up__link {
+  content: '';
+  right: 0;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  border-radius: 0 0 0 .5rem;
+  position: absolute;
+  background: $yellow;
+  background-image: url('../../dist/img/arrow-up.svg');
+  background-size: 1.5rem 1.5rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 50;
 }
 .map__cityname {
   font-size: 2rem;

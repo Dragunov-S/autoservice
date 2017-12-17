@@ -1,4 +1,4 @@
-.main__container 
+.main__container#main 
   .wrapper.main__wrapper
     .header
       .header__wrap
@@ -6,15 +6,16 @@
           ul.header__list
             +menuitem('#price', 'В магазин')
             +menuitem('#price', 'Прайс')
-            +menuitem('#', 'Оставить отзыв')
-            +menuitem('#', 'Контакты')
+            +menuitem('#review', 'Оставить отзыв')
+            +menuitem('#contacts', 'Контакты')
         .header__contacts
           ul.header__list
             +contactphone('Тольятти', '(8482)37-95-30')
             +contactphone('Сызрань', '(8464)37-30-60')
     .main__brand
       p.main__brand-type Сеть автосервисов
-      p.main__brand-name Навигатор
+      svg(width="420" height="100" viewbox="0 0 320 43").svg
+          use(xlink:href='#navigator-logo')
       p.main__brand-slogan Европейский сервис по отечественной цене
     .main__description
       .main__description-block  

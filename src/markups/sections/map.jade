@@ -1,10 +1,10 @@
-.map__container
-  .wrapper
+.map__container#contacts
+  .footer__wrapper
     +headline('Как нас найти', '1')
     .map__location
       .map__cities
         +cityaddress('location-active', 'Тольятти', 'Борковская, 65 | (8482) 37-95-30', '8:00 –20:00', '1')
         .map__empty
         +cityaddress('location-passive', 'Сызрань', 'Опорный, 16 | (8464) 37-30-60', '8:00 –20:00')
-      .map__map#YMapsID
-        
+.map__map#YMapsID
+  a(href='#main').up__link

@@ -16,6 +16,7 @@ html
       s.iconStyle.offset = new YMaps.Point(-9, -29);
       map.setCenter(new YMaps.GeoPoint(49.32, 53.55), 13);
       var placemark = new YMaps.Placemark(new YMaps.GeoPoint(49.28777059999993, 53.5479249), {style: s});
+      map.enableScrollZoom();
       map.addControl(new YMaps.Zoom());
       placemark.name = "Навигатор";
       placemark.description = "Сеть автосервисов навигатор";

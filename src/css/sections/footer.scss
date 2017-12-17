@@ -1,0 +1,97 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: $footerbackground;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  height: $footerheight;
+  width: 100%;
+  border-bottom: 2px solid $footermenuitem;
+}
+.footer__information {
+  height: $footerheight;
+  width: 100%;
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+.footer_svg {
+  fill: $footermenuitem;
+}
+.footer__list {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.footer__menu {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+.footer__item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 2rem;
+}
+.footer__item:hover {
+  border-bottom: 1px solid $white;
+  color: $white;
+}
+.footer__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  color: $footermenuitem;
+  text-transform: uppercase;
+  position: relative;
+  height: 100%;
+}
+.footer__link::after {
+  position: absolute;
+  content: '';
+  display: block;
+  cursor: pointer;
+  top: 0;
+  height: 100%;
+  width: 100%; 
+}
+.footer__link:hover {
+  color: $white;
+}
+.footer__contacts {
+  display: flex;
+  align-items: center;
+}
+.footer__contacts-item {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.footer__town {
+  display: inline-block;
+  color: $footermenuitem;
+  text-transform: uppercase;
+}
+.footer__number {
+  display: inline-block;
+  color: $footermenuitem;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+}
+.footer__information {
+  display: flex;
+  align-items: center;
+}
+.footer__text {
+  @include ptsans(regular);
+  color: $footermenuitem;
+}
