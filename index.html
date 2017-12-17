@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/css/style.css">
-    <svg width="0" height="0">
+    <svg width="0" height="0" class="svg_display">
       <defs class="svg">
         <path id="price-tech-service" d="M5,566H43a5,5,0,0,1,5,5v38a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V571a5,5,0,0,1,5-5H5Zm-1,3a1,1,0,0,0-1,1v40a1,1,0,0,0,1,1H44a1,1,0,0,0,1-1V570a1,1,0,0,0-1-1H4Zm5,40h9.05c1.5-2.5,3.19-6.22,4.87-8.55,2.66-3.67,5.22-5.74,7.72-6.67a10.07,10.07,0,0,0,6.57-5c0.74-1.34,2.55-6.1,1.44-7.49-0.32-.4-0.66-0.16-1,0.19l-4.51,4.77c-1.29,1.19-3.52.5-5-.64-1.72-1.32-3.43-4.21-2-6.25a13.47,13.47,0,0,1,2.17-2.17l3-2.78c0.7-.7.17-1.11-0.38-1.27-1.25-.38-4.38.47-6.7,1.33s-4.38,1.94-4.91,4.57c-0.44,2.16,0,4.78,0,7,0,3.33-1.36,7.28-4.29,12Z" transform="translate(0 -566)"></path>
         <symbol id="cooling-system"> 
@@ -53,14 +53,14 @@
             <div class="header__wrap">
               <div class="header__menu">
                 <ul class="header__list">
+                      <li class="header__item"><a href="#price" class="header__link"> 
+                          <p class="header__link-text">В магазин</p></a></li>
+                      <li class="header__item"><a href="#price" class="header__link"> 
+                          <p class="header__link-text">Прайс</p></a></li>
                       <li class="header__item"><a href="#" class="header__link"> 
-                          <p class="header__link-text"> В магазин</p></a></li>
+                          <p class="header__link-text">Оставить отзыв</p></a></li>
                       <li class="header__item"><a href="#" class="header__link"> 
-                          <p class="header__link-text"> Прайс</p></a></li>
-                      <li class="header__item"><a href="#" class="header__link"> 
-                          <p class="header__link-text"> Оставить отзыв</p></a></li>
-                      <li class="header__item"><a href="#" class="header__link"> 
-                          <p class="header__link-text"> Контакты</p></a></li>
+                          <p class="header__link-text">Контакты</p></a></li>
                 </ul>
               </div>
               <div class="header__contacts">
@@ -95,15 +95,15 @@
                       <p class="main__description-text">Комфортная зона ожидания</p></a></div>
             </div>
           </div>
-          <div class="registration">
-            <div class="registration__block"><a href="#" class="registration__button">Записаться</a></div>
-          </div>
+              <div class="registration">
+                <div class="registration__block"><a href="#order" class="registration__button">Записаться</a></div>
+              </div>
           <div class="main_arrow">
-            <div class="main__arrow-block"><a href="#" class="main_arrow-link"><img src="dist/img/arrow-down.svg" alt="arrowdown" onerror="this.onerror=null; this.src='dist/img/arrow-down.png'"></a></div>
+            <div class="main__arrow-block"><a href="#price" class="main_arrow-link"><img src="dist/img/arrow-down.svg" alt="arrowdown" onerror="this.onerror=null; this.src='dist/img/arrow-down.png'"></a></div>
           </div>
         </div>
       </div>
-      <div class="price__container"> 
+      <div id="price" class="price__container">
         <div class="wrapper"> 
               <div class="headline">
                 <div class="headline__block">
@@ -112,7 +112,7 @@
               </div>
           <div class="price__services">
             <div class="price__services-block">
-                  <div style="background-image: url(dist/img/tech-service.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/tech-service.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 48 48" class="svg">
@@ -123,7 +123,7 @@
                       <div class="price__services-half">
                         <p class="price__services-text">Техническое обслуживание</p>
                       </div></a></div>
-                  <div style="background-image: url(dist/img/cooling-system.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/cooling-system.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 48 48" class="svg">
@@ -134,7 +134,7 @@
                       <div class="price__services-half">
                         <p class="price__services-text">Система охлаждения</p>
                       </div></a></div>
-                  <div style="background-image: url(dist/img/tyres.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/tyres.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 56 44" class="svg">
@@ -145,7 +145,7 @@
                       <div class="price__services-half">
                         <p class="price__services-text">Шиномонтажные работы</p>
                       </div></a></div>
-                  <div style="background-image: url(dist/img/geometry.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/geometry.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 38 48" class="svg">
@@ -156,7 +156,7 @@
                       <div class="price__services-half">
                         <p class="price__services-text">Геометрия подвески</p>
                       </div></a></div>
-                  <div style="background-image: url(dist/img/steering-wheel.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/steering-wheel.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 48 48" class="svg">
@@ -167,7 +167,7 @@
                       <div class="price__services-half">
                         <p class="price__services-text">Подвеска, рулевое управление</p>
                       </div></a></div>
-                  <div style="background-image: url(dist/img/brakers.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/brakers.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 48 44" class="svg">
@@ -178,7 +178,7 @@
                       <div class="price__services-half">
                         <p class="price__services-text">Тормозная система</p>
                       </div></a></div>
-                  <div style="background-image: url(dist/img/battery.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/battery.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 48 38" class="svg">
@@ -189,7 +189,7 @@
                       <div class="price__services-half">
                         <p class="price__services-text">Аккумуляторы и свечи</p>
                       </div></a></div>
-                  <div style="background-image: url(dist/img/starter.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/starter.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 48 48" class="svg">
@@ -200,7 +200,7 @@
                       <div class="price__services-half">
                         <p class="price__services-text">Генератор, стартер и ремни</p>
                       </div></a></div>
-                  <div style="background-image: url(dist/img/optics.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/optics.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 48 34" class="svg">
@@ -211,7 +211,7 @@
                       <div class="price__services-half">
                         <p class="price__services-text">Оптика</p>
                       </div></a></div>
-                  <div style="background-image: url(dist/img/conditioner.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/conditioner.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 48 48" class="svg">
@@ -222,7 +222,7 @@
                       <div class="price__services-half">
                         <p class="price__services-text">Система кондиционирования</p>
                       </div></a></div>
-                  <div style="background-image: url(dist/img/gear.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/gear.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 48 48" class="svg">
@@ -233,7 +233,7 @@
                       <div class="price__services-half">
                         <p class="price__services-text">Трансмиссия</p>
                       </div></a></div>
-                  <div style="background-image: url(dist/img/other.jpg)" class="price__services-item"><a href="#" class="price__services-link"> 
+                  <div style="background-image: url(dist/img/other.jpg)" class="price__services-item"><a href="#price" class="price__services-link"> 
                       <div class="price__services-half price__services-half--end"> 
                         <div class="price__services-icon">
                           <svg width="60" height="60" viewbox="0 0 48 32" class="svg">
@@ -246,9 +246,9 @@
                       </div></a></div>
             </div>
           </div>
-          <div class="registration">
-            <div class="registration__block"><a href="#" class="registration__button">Записаться</a></div>
-          </div>
+              <div class="registration">
+                <div class="registration__block"><a href="#order" class="registration__button">Записаться</a></div>
+              </div>
         </div>
       </div>
       <div class="choise__container"> 
@@ -295,8 +295,168 @@
               </div>
             </div>
           </div>
+              <div class="registration">
+                <div class="registration__block"><a href="#order" class="registration__button">Записаться</a></div>
+              </div>
+        </div>
+      </div>
+      <div id="order" class="order__container"> 
+        <div class="wrapper main__wrapper">
+          <div class="order__headline">
+                <div class="headline">
+                  <div class="headline__block">
+                    <p class="headline__text">Заявка на ремонт и обслуживание в</p>
+                  </div>
+                </div>
+            <div class="order__headline-select-block">
+              <select class="order__headline-select">
+                <option>Тольятти</option>
+                <option>Сызрани</option>
+              </select>
+            </div>
+          </div>
+          <form action="#" name="order" class="order__form">
+            <div class="order__form-item">
+              <label for="fio" class="order__label order__label--required">Представьтесь, пожалуйста</label>
+              <input type="text" id="fio" name="fio" required placeholder="Иванов Иван Иванович" class="order__input">
+            </div>
+            <div class="order__form-item">
+              <label for="phone-number" class="order__label order__label--required">Телефон</label>
+              <input type="text" id="phone-number" name="phone-number" required placeholder="8 927 1234567" class="order__input">
+            </div>
+            <div class="order__form-item">
+              <label for="email" class="order__label">E-mail</label>
+              <input type="text" id="email" name="email" placeholder="example@mail.ru" class="order__input">
+            </div>
+            <div class="order__form-item">
+              <label for="brand" class="order__label">Марка автомобиля</label>
+              <input type="text" id="brand" name="brand" placeholder="Honda Civic" class="order__input">
+            </div>
+            <div class="order__form-item">
+              <label for="service" class="order__label">Вид сервиса</label>
+              <div class="order__select-block"><span class="dropdown-el">
+                  <input type="radio" name="service" value="1" checked id="cooling">
+                  <label for="cooling">Система охлаждения</label>
+                  <input type="radio" name="service" value="2" id="techservice">
+                  <label for="techservice">Техническое обслуживание</label>
+                  <input type="radio" name="service" value="3" id="tyres">
+                  <label for="tyres">Шиномонтажные работы</label></span></div>
+            </div>
+            <div class="order__form-item">
+              <label for="date" class="order__label">Удобная дата и время обслуживания</label>
+              <input type="text" id="date" name="date" placeholder="22.05.18 в 18:00" class="order__input">
+            </div>
+            <div class="order__form-textarea">
+              <label for="suggestion" class="order__label">Дополнительные пожелания</label>
+              <textarea id="suggestion" name="suggestion" placeholder="Напишите дополнительные пожелания по обслуживанию" class="order__textarea"></textarea>
+            </div>
+            <div class="order__form-checkbox">
+              <input type="checkbox" id="agree" value="1" name="agree" checked class="order__checkbox">
+              <label for="agree" class="order__checkbox-label">Согласен на обработку персональных данных</label>
+            </div>
+          </form>
+          <div class="empty__block"></div>
+              <div class="registration">
+                <div class="registration__block"><a href="#order" class="registration__button">Записаться</a></div>
+              </div>
+        </div>
+      </div>
+      <div class="review__container">
+        <div class="review__wrapper">
+          <div class="review__block"> 
+                <div class="headline">
+                  <div class="headline__block">
+                    <p class="headline__text headline__text--color">Отзывы об автосервисах «Навигатор»</p>
+                  </div>
+                </div>
+            <div class="review-csslider">
+              <input type="radio" name="slide" id="slide_1" checked>
+              <input type="radio" name="slide" id="slide_2">
+              <input type="radio" name="slide" id="slide_3">
+              <input type="radio" name="slide" id="slide_4">
+              <input type="radio" name="slide" id="slide_N">
+              <ul>
+                <li>
+                  <p class="review__item">Отзывывывывывывывыв</p>
+                </li>
+                <li>
+                  <p class="review__item">Отзывывdfsfsd</p>
+                </li>
+                <li>
+                  <p class="review__item">Отзывыghkjhkjk</p>
+                </li>
+                <li>
+                  <p class="review__item">Отзывыjhjghjh</p>
+                </li>
+                <li>
+                  <p class="review__item">Отзывывыjffghj</p>
+                </li>
+              </ul>
+              <div class="review-arrows">
+                <label for="slide_1"></label>
+                <label for="slide_2"></label>
+                <label for="slide_3"></label>
+                <label for="slide_4"></label>
+                <label for="slide_N"></label>
+                <label for="slide_1" class="review-goto-first"></label>
+                <label for="slide_N" class="review-goto-last"></label>
+              </div>
+              <div class="review-navigation">
+                <div>
+                  <label for="slide_1"></label>
+                  <label for="slide_2"></label>
+                  <label for="slide_3"></label>
+                  <label for="slide_4"></label>
+                  <label for="slide_N"></label>
+                </div>
+              </div>
+              <div class="review-slider__border"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review-form__container"> 
+        <div class="wrapper main__wrapper">
+              <div class="headline">
+                <div class="headline__block">
+                  <p class="headline__text">Нам важен ваш отзыв</p>
+                </div>
+              </div>
+          <form action="#" name="review" class="review__form">
+            <div class="review__form-item review__form-item--start">
+              <label for="review-fio" class="review__label review__label--required">Представьтесь, пожалуйста</label>
+              <input type="text" id="review-fio" name="review-fio" required placeholder="Иванов Иван Иванович" class="review__input">
+            </div>
+            <div class="review__form-item">
+              <label for="review-phone-number" class="review__label review__label--required">Телефон</label>
+              <input type="text" id="review-phone-number" name="review-phone-number" required placeholder="8 927 1234567" class="review__input">
+            </div>
+            <div class="review__form-item">
+              <label for="review-email" class="review__label">E-mail</label>
+              <input type="text" id="review-email" name="review-email" placeholder="example@mail.ru" class="review__input">
+            </div>
+            <div class="review__form-item review__form-item--start">
+              <label for="review-brand" class="review__label">Дата и время обращения к нам</label>
+              <input type="text" id="review-brand" name="review-brand" placeholder="22.05.18 в 18:00" class="review__input">
+            </div>
+            <div class="review__form-item">
+              <label for="review-date" class="review__label">Номер заказ-наряда</label>
+              <input type="text" id="review-date" name="review-date" placeholder="123" class="review__input">
+            </div>
+            <div class="review__form-textarea">
+              <label for="review-suggestion" class="review__label">Текст отзыва</label>
+              <textarea id="review-suggestion" name="review-suggestion" placeholder="Ваш отзыв" class="review__textarea"></textarea>
+            </div>
+            <div class="review__form-checkbox">
+              <input type="checkbox" id="review-agree" value="1" name="review-agree" class="review__checkbox">
+              <label for="review-agree" class="review__checkbox-label">Согласен на обработку персональных данных</label>
+            </div>
+          </form>
+          <div class="empty__block"></div>
           <div class="registration">
-            <div class="registration__block"><a href="#" class="registration__button">Записаться</a></div>
+            <div class="registration__block">
+              <input type="submit" value="Отправить" name="submit" class="registration__button review__submit">
+            </div>
           </div>
         </div>
       </div>

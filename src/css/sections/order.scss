@@ -1,0 +1,125 @@
+.order__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+}
+.order__headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order__headline-select-block { 
+  padding-left: 1rem;  
+  overflow: hidden;
+}
+.order__headline-select {
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  @include ptsans(bold);
+  color: $yellow;
+  font-size: 2rem;
+  height: 3rem;
+  width: 10rem;
+}
+.order__form {
+  color: $formlabelcolor;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.order__form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 23rem;
+}
+.order__label {
+  @include ptsans(bold);
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+.order__label--required::after {
+  content:"*";
+  color:red;
+}
+.order__input {
+  height: $inputheight;
+  width: 21.5rem;
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.2);
+  border: none;
+  border-radius: .7rem;
+  padding-left: 1.5rem;
+}
+.order__input:focus {
+  outline: none;
+  border-radius: .7rem;
+  box-shadow: 0px 0px 0px 2px $yellow;
+}
+.order__input::placeholder {
+  @include ptsans(italic);
+  opacity: 0.5;
+}
+.order__form-textarea {  
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.order__textarea {
+  width: 98%;
+  height: 7rem;
+  padding: .7rem 0 0 1.5rem;
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.2);
+  border: none;
+  border-radius: .7rem;
+  resize: none;
+  overflow: auto;
+}
+.order__textarea:focus {
+  outline: none;
+  border-radius: .7rem;
+  box-shadow: 0px 0px 0px 2px $yellow;
+}
+.order__textarea::placeholder {
+  @include ptsans(italic);
+  opacity: 0.5;
+}
+.order__form-checkbox {
+  display: flex;
+}
+.order__checkbox {
+  margin-right: 2rem;
+  opacity: 0;
+}
+.order__checkbox-label {
+  @include ptsans(bold);
+  font-size: 1.2rem;
+  color: $headline;
+  position: relative;
+}
+.order__checkbox-label::before {
+  content: '';
+  position: absolute;
+  top: -.2rem;
+  left: -3rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: .5rem;
+  background: $yellow;
+}
+.order__checkbox:checked + .order__checkbox-label::before {
+  background-image: url('../../dist/img/check.svg');
+  background-size: 1.5rem 1.5rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.order__select-block {
+  position: relative;
+}
+.empty__block {
+  display: flex;
+  flex-grow: 1;
+}

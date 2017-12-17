@@ -1,0 +1,134 @@
+.review-form__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../dist/img/reviewback.jpg');
+  background-size: cover;
+  position: relative;
+}
+.review-form__container::after {
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $reviewbackground;
+  opacity: 0.9;
+}
+.review__block {
+  background-color: $choisebackground;
+  height: 32rem; 
+}
+.review__item {
+  padding: 2rem 0 2rem 7rem;
+  @include ptsans(bold);
+  font-size: 2rem;
+}
+.review__form {
+  color: $formlabelcolor;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.review__form-item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4.25rem;
+  margin-bottom: 2rem;
+  width: 23rem;
+}
+.review__form-item--start {
+  padding-left: 0;
+}
+.review__label {
+  @include ptsans(bold);
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+.review__label--required::after {
+  content:"*";
+  color:red;
+}
+.review__input {
+  height: $inputheight;
+  width: 21.5rem;
+  border: none;
+  border-radius: .7rem;
+  padding-left: 1.5rem;
+}
+.review__input:focus {
+  outline: none;
+  border-radius: .7rem;
+  box-shadow: 0px 0px 0px 2px $yellow;
+}
+.review__input::placeholder {
+  @include ptsans(italic);
+  opacity: 0.5;
+}
+.review__form-textarea {  
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.review__textarea {
+  width: 98%;
+  height: 7rem;
+  padding: .7rem 0 0 1.5rem;
+  border: none;
+  border-radius: .7rem;
+  resize: none;
+  overflow: auto;
+}
+.review__textarea:focus {
+  outline: none;
+  border-radius: .7rem;
+  box-shadow: 0px 0px 0px 2px $yellow;
+}
+.review__textarea::placeholder {
+  @include ptsans(italic);
+  opacity: 0.5;
+}
+.review__form-checkbox {
+  display: flex;
+}
+.review__checkbox {
+  margin-right: 2rem;
+  opacity: 0;
+}
+.review__checkbox-label {
+  @include ptsans(bold);
+  font-size: 1.2rem;
+  color: $headline;
+  position: relative;
+}
+.review__checkbox-label::before {
+  content: '';
+  position: absolute;
+  top: -.2rem;
+  left: -3rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: .5rem;
+  background: $white;
+}
+.review__checkbox:checked + .review__checkbox-label::before {
+  background-color: $yellow;
+  background-image: url('../../dist/img/check.svg');
+  background-size: 1.5rem 1.5rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.review__select-block {
+  position: relative;
+}
+.empty__block {
+  display: flex;
+  flex-grow: 1;
+}
+.review__submit {
+  padding: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+} 

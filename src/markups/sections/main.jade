@@ -4,8 +4,8 @@
       .header__wrap
         .header__menu
           ul.header__list
-            +menuitem('#', 'В магазин')
-            +menuitem('#', 'Прайс')
+            +menuitem('#price', 'В магазин')
+            +menuitem('#price', 'Прайс')
             +menuitem('#', 'Оставить отзыв')
             +menuitem('#', 'Контакты')
         .header__contacts
@@ -21,11 +21,9 @@
         +descriptionblock('discounts', 'Всегда выгодные акции')
         +descriptionblock('guarantee', 'Гарантия на работы')
         +descriptionblock('recreation', 'Комфортная зона ожидания')
-    .registration
-      .registration__block
-        a(href='#').registration__button Записаться
+    +registration('#order')
     .main_arrow
       .main__arrow-block
-        a(href='#').main_arrow-link
+        a(href='#price').main_arrow-link
           img(src="dist/img/arrow-down.svg" alt="arrowdown" onerror="this.onerror=null; this.src='dist/img/arrow-down.png'") 
 

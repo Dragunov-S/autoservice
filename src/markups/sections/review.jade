@@ -1,0 +1,34 @@
+.review__container
+  .review__wrapper
+    .review__block  
+      +headline('Отзывы об автосервисах «Навигатор»', '1')
+      include ../common/review-slider
+.review-form__container  
+  .wrapper.main__wrapper
+    +headline('Нам важен ваш отзыв')
+    form(action="#" name="review").review__form
+      .review__form-item.review__form-item--start
+        label(for="review-fio").review__label.review__label--required Представьтесь, пожалуйста
+        input(type="text" id="review-fio" name="review-fio" required placeholder="Иванов Иван Иванович").review__input
+      .review__form-item
+        label(for="review-phone-number").review__label.review__label--required Телефон
+        input(type="text" id="review-phone-number" name="review-phone-number" required placeholder="8 927 1234567").review__input
+      .review__form-item
+        label(for="review-email").review__label E-mail
+        input(type="text" id="review-email" name="review-email" placeholder="example@mail.ru").review__input
+      .review__form-item.review__form-item--start
+        label(for="review-brand").review__label Дата и время обращения к нам
+        input(type="text" id="review-brand" name="review-brand" placeholder="22.05.18 в 18:00").review__input
+      .review__form-item
+        label(for="review-date").review__label Номер заказ-наряда
+        input(type="text" id="review-date" name="review-date" placeholder="123").review__input
+      .review__form-textarea
+        label(for="review-suggestion").review__label Текст отзыва
+        textarea(id="review-suggestion" name="review-suggestion" placeholder="Ваш отзыв").review__textarea
+      .review__form-checkbox
+        input(type="checkbox" id="review-agree" value="1" name="review-agree").review__checkbox
+        label(for="review-agree").review__checkbox-label Согласен на обработку персональных данных
+    .empty__block
+    .registration
+      .registration__block
+        input(type="submit" value="Отправить" name="submit").registration__button.review__submit

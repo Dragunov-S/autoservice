@@ -1,20 +1,18 @@
-.price__container  
+.price__container#price
   .wrapper 
     +headline('Прайс на услуги')
     .price__services
       .price__services-block
-        +priceitem ('tech-service', 'price-tech-service', 'Техническое обслуживание', '48', '48')
-        +priceitem ('cooling-system', 'cooling-system', 'Система охлаждения', '48', '48')
-        +priceitem ('tyres', 'price-tyres', 'Шиномонтажные работы', '56', '44')
-        +priceitem ('geometry', 'price-geometry', 'Геометрия подвески', '38', '48')
-        +priceitem ('steering-wheel', 'steering-wheel', 'Подвеска, рулевое управление', '48', '48')
-        +priceitem ('brakers', 'brakers', 'Тормозная система',  '48', '44')
-        +priceitem ('battery', 'battery', 'Аккумуляторы и свечи',  '48', '38')
-        +priceitem ('starter', 'starter', 'Генератор, стартер и ремни',  '48', '48')
-        +priceitem ('optics', 'optics', 'Оптика',  '48', '34')
-        +priceitem ('conditioner', 'conditioner', 'Система кондиционирования',  '48', '48')
-        +priceitem ('gear', 'gear', 'Трансмиссия',  '48', '48') 
-        +priceitem ('other', 'other', 'Другое',  '48', '32') 
-    .registration
-      .registration__block
-        a(href='#').registration__button Записаться
+        +priceitem ('price', 'tech-service', 'price-tech-service', 'Техническое обслуживание', '48', '48')
+        +priceitem ('price', 'cooling-system', 'cooling-system', 'Система охлаждения', '48', '48')
+        +priceitem ('price', 'tyres', 'price-tyres', 'Шиномонтажные работы', '56', '44')
+        +priceitem ('price', 'geometry', 'price-geometry', 'Геометрия подвески', '38', '48')
+        +priceitem ('price', 'steering-wheel', 'steering-wheel', 'Подвеска, рулевое управление', '48', '48')
+        +priceitem ('price', 'brakers', 'brakers', 'Тормозная система',  '48', '44')
+        +priceitem ('price', 'battery', 'battery', 'Аккумуляторы и свечи',  '48', '38')
+        +priceitem ('price', 'starter', 'starter', 'Генератор, стартер и ремни',  '48', '48')
+        +priceitem ('price', 'optics', 'optics', 'Оптика',  '48', '34')
+        +priceitem ('price', 'conditioner', 'conditioner', 'Система кондиционирования',  '48', '48')
+        +priceitem ('price', 'gear', 'gear', 'Трансмиссия',  '48', '48') 
+        +priceitem ('price', 'other', 'other', 'Другое',  '48', '32') 
+    +registration('#order')

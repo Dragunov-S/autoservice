@@ -1,9 +1,7 @@
-include svg
-
 mixin menuitem (link, text)
   li.header__item
     a(href='#{link}').header__link 
-      p.header__link-text  #{text}
+      p.header__link-text #{text}
 
 mixin headline (text, color)
   .headline
@@ -25,12 +23,16 @@ mixin descriptionblock (icon, text)
         img(src='dist/img/#{icon}.svg' alt='#{text}' onerror="this.onerror=null; this.src='dist/img/#{icon}.png'").image__size
       p.main__description-text #{text}
 
-mixin priceitem (bg, icon, text, vw, vh)
+mixin priceitem (link, bg, icon, text, vw, vh)
   .price__services-item(style='background-image: url(dist/img/#{bg}.jpg)')
-    a(href='#').price__services-link  
+    a(href='#' + link).price__services-link  
       .price__services-half.price__services-half--end  
         .price__services-icon
           svg(width="60" height="60" viewbox="0 0 #{vw} #{vh}").svg
             use(xlink:href='#' + icon)
       .price__services-half
         p.price__services-text #{text}
+mixin registration (link)
+  .registration
+    .registration__block
+      a(href='#{link}').registration__button Записаться

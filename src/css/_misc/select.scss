@@ -1,0 +1,67 @@
+.dropdown-el {
+  min-width: 100%;
+  position: absolute;
+  display: inline-block;
+  min-height: $inputheight;
+  max-height: $inputheight;
+  overflow:hidden; 
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  color: #444;
+  outline: none;
+  border: .06em solid rgba(0,0,0,0.2);
+  background: #fff;
+  border-radius: .7rem;
+  padding: 0;
+  transition: .3s all ease-in-out;  
+  input {
+    display:none;
+  }
+  label {
+    border-top: .06em solid #d9d9d9;
+    display: block;
+    height: $inputheight;
+    line-height: $inputheight;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    cursor: pointer;
+    position: relative;
+    transition: .1s color ease-in-out;
+      &:hover {
+        color:$yellow;
+      }  
+    &:nth-child(2) {
+      margin-top: $inputheight;
+      border-top: .06em solid #d9d9d9;
+    }
+  }
+  input:checked + label {
+    display:block;
+    border-top: none;
+    position: absolute;
+    top: 0;
+    color:$formlabelcolor;
+
+    &:nth-child(2) {
+      margin-top: 0;
+      position: relative;
+    }
+  }
+  &::after {
+    content:"";
+    position: absolute;
+    right: 1rem;
+    top: 1.6rem;
+    border: .5em solid $yellow;
+    border-color: $yellow transparent transparent transparent;
+    transition: .2s all ease-in-out;
+  }
+}
+.dropdown-el:hover {
+  max-height:15rem;
+  &::after {
+    transform: rotate(-180deg);
+    top: 1rem;
+  }
+}
