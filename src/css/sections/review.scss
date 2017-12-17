@@ -16,6 +16,9 @@
   opacity: 0.9;
 }
 .review__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $choisebackground;
   height: 32rem; 
 }

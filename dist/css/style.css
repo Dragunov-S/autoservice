@@ -886,6 +886,9 @@ body {
   opacity: 0.9; }
 
 .review__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #263238;
   height: 32rem; }
 
@@ -1006,6 +1009,51 @@ body {
   border-top: 0;
   border-right: 0;
   border-left: 0; }
+
+.map__location {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.map__city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 12rem;
+  width: 30rem; }
+
+.map__map {
+  height: 30rem;
+  width: 100%; }
+
+.map__cityname {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem 0; }
+
+.map__cityname--active {
+  color: #FBCA0b; }
+
+.map__cityaddress {
+  font-size: 1.5rem; }
+
+.map__cityaddress--active {
+  color: #FFFFFF; }
+
+p.map__citytime {
+  font-size: 1.5rem; }
+
+.map__citytime--active {
+  color: #FFFFFF; }
+
+.map__cities {
+  display: flex;
+  height: 15rem; }
+
+.map__empty {
+  height: 12rem;
+  border-right: 2px solid #808080;
+  opacity: .3; }
 
 @media screen and (max-width: 1280px) {
   html {
@@ -1239,7 +1287,7 @@ body {
   -ms-perspective: 1300px;
   -webkit-perspective: 1300px;
   perspective: 1300px;
-  width: 100%;
+  width: 77.5rem;
   display: inline-block;
   text-align: left;
   position: relative;

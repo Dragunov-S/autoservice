@@ -32,7 +32,29 @@ mixin priceitem (link, bg, icon, text, vw, vh)
             use(xlink:href='#' + icon)
       .price__services-half
         p.price__services-text #{text}
+
 mixin registration (link)
   .registration
     .registration__block
       a(href='#{link}').registration__button Записаться
+
+mixin cityaddress (icon, name, address, time, active)
+  .map__city
+    if(active === '1')
+      svg(width="55" height="55" viewbox="0 0 38 56").svg
+        use(xlink:href='#' + icon)
+    else
+      svg(width="55" height="55" viewbox="0 0 38 56")
+        use(xlink:href='#' + icon)
+    if(active === '1')
+      p.map__cityname.map__cityname--active= name
+    else
+      p.map__cityname= name
+    if(active === '1')
+      p.map__cityaddress.map__cityaddress--active= address
+    else
+      p.map__cityaddress= address
+    if(active === '1')
+      p.map__citytime.map__citytime--active= time
+    else
+      p.map__citytime= time

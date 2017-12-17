@@ -5,9 +5,24 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     link(rel="stylesheet" href="dist/css/style.css")
-    include ../common/mixins
-    include ../common/svg
+    script(src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript")
+    script.
+      YMaps.jQuery(function () {
+      var map = new YMaps.Map(YMaps.jQuery("#YMapsID"));
+      var s = new YMaps.Style();
+      s.iconStyle = new YMaps.IconStyle();
+      s.iconStyle.href = "dist/img/map-nav.svg";
+      s.iconStyle.size = new YMaps.Point(28, 40);
+      s.iconStyle.offset = new YMaps.Point(-9, -29);
+      map.setCenter(new YMaps.GeoPoint(49.32, 53.55), 13);
+      var placemark = new YMaps.Placemark(new YMaps.GeoPoint(49.28777059999993, 53.5479249), {style: s});
+      map.addControl(new YMaps.Zoom());
+      placemark.name = "Навигатор";
+      placemark.description = "Сеть автосервисов навигатор";
+      map.addOverlay(placemark);})
     title СТО Навигатор
+    include ../common/mixins
+    include ../common/svg 
 
   body
     .container

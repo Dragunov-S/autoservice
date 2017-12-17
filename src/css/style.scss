@@ -12,7 +12,7 @@ $formfieldcolor: #cccccc;
 $pricebackground: #E5E6E7;
 $choisebackground: #263238;
 $reviewbackground: #E5E6E7;
-$footerbackground: #151515;
+$footerbackground: #151515; 
 $footermenuitem: #4D4D4D; 
 
 //sizes
@@ -37,6 +37,7 @@ $inputheight: 3.5rem;
 @import "sections/choise";
 @import "sections/order";
 @import "sections/review";
+@import "sections/map";
 @import "_misc/media";
 @import "_misc/slider";
 @import "_misc/review-slider";
