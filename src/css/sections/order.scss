@@ -11,9 +11,11 @@
   align-items: center;
 }
 .order__headline-select-block { 
-  padding-left: 1rem;  
-  overflow: hidden;
+  height: 3.5rem;
+  padding-left: 0.5rem;
+  position: relative;
 }
+// --Ненужно
 .order__headline-select {
   border: 0;
   cursor: pointer;

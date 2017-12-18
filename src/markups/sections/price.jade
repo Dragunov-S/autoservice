@@ -3,16 +3,19 @@
     +headline('Прайс на услуги')
     .price__services
       .price__services-block
-        +priceitem ('price', 'tech-service', 'price-tech-service', 'Техническое обслуживание', '48', '48')
-        +priceitem ('price', 'cooling-system', 'cooling-system', 'Система охлаждения', '48', '48')
-        +priceitem ('price', 'tyres', 'price-tyres', 'Шиномонтажные работы', '56', '44')
-        +priceitem ('price', 'geometry', 'price-geometry', 'Геометрия подвески', '38', '48')
-        +priceitem ('price', 'steering-wheel', 'steering-wheel', 'Подвеска, рулевое управление', '48', '48')
-        +priceitem ('price', 'brakers', 'brakers', 'Тормозная система',  '48', '44')
-        +priceitem ('price', 'battery', 'battery', 'Аккумуляторы и свечи',  '48', '38')
-        +priceitem ('price', 'starter', 'starter', 'Генератор, стартер и ремни',  '48', '48')
-        +priceitem ('price', 'optics', 'optics', 'Оптика',  '48', '34')
-        +priceitem ('price', 'conditioner', 'conditioner', 'Система кондиционирования',  '48', '48')
-        +priceitem ('price', 'gear', 'gear', 'Трансмиссия',  '48', '48') 
-        +priceitem ('price', 'other', 'other', 'Другое',  '48', '32') 
+        +priceitem ('pop-up', 'tech-service', 'price-tech-service', 'Техническое обслуживание', '48', '48')
+        +priceitem ('pop-up', 'cooling-system', 'cooling-system', 'Система охлаждения', '48', '48')
+        +priceitem ('pop-up', 'tyres', 'price-tyres', 'Шиномонтажные работы', '56', '44')
+        +priceitem ('pop-up', 'geometry', 'price-geometry', 'Геометрия подвески', '38', '48')
+        +priceitem ('pop-up', 'steering-wheel', 'steering-wheel', 'Подвеска, рулевое управление', '48', '48')
+        +priceitem ('pop-up', 'brakers', 'brakers', 'Тормозная система',  '48', '44')
+        +priceitem ('pop-up', 'battery', 'battery', 'Аккумуляторы и свечи',  '48', '38')
+        +priceitem ('pop-up', 'starter', 'starter', 'Генератор, стартер и ремни',  '48', '48')
+        +priceitem ('pop-up', 'optics', 'optics', 'Оптика',  '48', '34')
+        +priceitem ('pop-up', 'conditioner', 'conditioner', 'Система кондиционирования',  '48', '48')
+        +priceitem ('pop-up', 'gear', 'gear', 'Трансмиссия',  '48', '48') 
+        +priceitem ('pop-up', 'other', 'other', 'Другое',  '48', '32')
+        .order__popup#pop-up
+          .order__popup-block
+            a(href="#price").order__popup-close &times 
     +registration('#order')

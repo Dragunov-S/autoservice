@@ -2,10 +2,12 @@
   .wrapper.main__wrapper
     .order__headline
       +headline('Заявка на ремонт и обслуживание в')
-      .order__headline-select-block
-        select.order__headline-select
-          option Тольятти
-          option Сызрани
+      .order__headline-select-block 
+        span.dropdown-city
+          input(type="radio" name="city" value="1" checked id="togliatty")
+          label(for="togliatty") Тольятти
+          input(type="radio" name="city" value="2" id="syzran")
+          label(for="syzran") Сызрани
     form(action="#" name="order").order__form
       .order__form-item
         label(for="fio").order__label.order__label--required Представьтесь, пожалуйста
